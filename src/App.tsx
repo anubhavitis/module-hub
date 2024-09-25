@@ -1,4 +1,6 @@
 import { useState } from "react";
+import "@aptos-labs/wallet-adapter-ant-design/dist/index.css";
+import { WalletSelector } from "@aptos-labs/wallet-adapter-ant-design";
 
 interface moduleFunction {
   name: string;
@@ -47,6 +49,7 @@ function App() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
+      <WalletSelector />
       <p className="text-xl">Find your module</p>
       <form
         className="mt-4  w-full flex items-center justify-center"
